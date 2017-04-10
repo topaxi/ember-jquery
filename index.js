@@ -22,6 +22,8 @@ module.exports = {
 
       var vendor = this.treePaths.vendor
 
+      app.import(vendor + '/shims/jquery.js', { prepend: true });
+
       if (this.jqueryOptions.slim) {
         app.import({
           development: vendor + '/jquery/jquery.slim.js',

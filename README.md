@@ -1,6 +1,32 @@
 # ember-jquery
 
-This README outlines the details of collaborating on this Ember addon.
+Easily add jquery to your ember applications
+
+## Usage
+
+```bash
+ember install ember-jquery
+```
+
+## Addon Options
+
+`ember-cli-build.js`:
+
+```javascript
+module.exports = function(defaults) {
+  let app = new EmberAddon(defaults, {
+    jquery: {
+      slim: true
+    }
+  });
+}
+```
+
+Available options:
+
+`slim` *boolean* (default false)
+
+Use the [jQuery slim](https://blog.jquery.com/2016/06/09/jquery-3-0-final-released/) build, released with jQuery 3.0 and upwards.
 
 ## Installation
 

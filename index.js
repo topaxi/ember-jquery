@@ -1,10 +1,6 @@
 /* eslint-env node */
 'use strict'
 
-var path = require('path')
-var Funnel = require('broccoli-funnel')
-var mergeTrees = require('broccoli-merge-trees')
-
 module.exports = {
   name: 'ember-jquery',
 
@@ -40,6 +36,7 @@ module.exports = {
   },
 
   getConfig: function() {
+    var path = require('path')
     var jqueryOptions = this.app.options.jquery || {}
     var jqueryPath = path.dirname(require.resolve('jquery'))
 
@@ -51,6 +48,8 @@ module.exports = {
   },
 
   treeForVendor: function(vendorTree) {
+    var Funnel = require('broccoli-funnel')
+    var mergeTrees = require('broccoli-merge-trees')
     var trees = []
 
     if (vendorTree) {

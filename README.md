@@ -1,5 +1,7 @@
 # ember-jquery
 
+[![Build Status](https://travis-ci.org/topaxi/ember-jquery.svg?branch=master)](https://travis-ci.org/topaxi/ember-jquery)
+
 Easily add jquery to your ember applications
 
 ## Usage

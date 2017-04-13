@@ -15,6 +15,9 @@ ember install ember-jquery
 ```javascript
 module.exports = function(defaults) {
   let app = new EmberAddon(defaults, {
+    // Disable jQuery bundled with Ember.js
+    vendorFiles: { 'jquery.js': null },
+    // Example to include jQuery slim instead of default build
     jquery: {
       slim: true
     }

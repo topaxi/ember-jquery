@@ -1,6 +1,6 @@
 {
   "name": "ember-jquery",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Easily include jQuery or jQuery slim into your ember application",
   "keywords": [
     "ember-addon",

@@ -38,7 +38,6 @@ Use the [jQuery slim](https://blog.jquery.com/2016/06/09/jquery-3-0-final-releas
 * `git clone <repository-url>` this repository
 * `cd ember-jquery`
 * `npm install`
-* `bower install`
 
 ## Running
 

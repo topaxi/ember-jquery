@@ -8,5 +8,7 @@
     };
   }
 
-  define('jquery', [], vendorModule);
+  if (typeof FastBoot === 'undefined') {
+    define('jquery', [], vendorModule);
+  }
 })();
